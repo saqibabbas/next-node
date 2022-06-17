@@ -1,7 +1,7 @@
 const app = require('./app');
 const mongoose = require('mongoose');
 
-const mongoUrl='mongodb://127.0.0.1:27017';
+let mongoUrl='mongodb://127.0.0.1:27017';
 if(process.env.MONGODB_URI){
     mongoUrl=process.env.MONGODB_URI;
 }
