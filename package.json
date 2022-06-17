@@ -1,0 +1,22 @@
+{
+  "name": "next-node",
+  "version": "0.0.1",
+  "description": "Nodejs Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saqibabbas/next-node.git"
+  },
+  "author": "Saqib Abbas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saqibabbas/next-node/issues"
+  },
+  "homepage": "https://github.com/saqibabbas/next-node#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
