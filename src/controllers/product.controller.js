@@ -6,7 +6,7 @@ const getProducts = async (req, res) => {
 };
 
 const saveProduct = async (req, res) => {
-    await productService.saveProduct();
+    await productService.saveProduct(req.body);
     res.send('saved');
 };
 

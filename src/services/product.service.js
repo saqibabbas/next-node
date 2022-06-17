@@ -5,17 +5,8 @@ const getProducts =async ()=>{
    return await Product.find();
 };
 
-const saveProduct = async ()=>{
-   const product = new Product({      
-      id: 0,
-      date: "16 Mar, 2019",
-      name: "Elvis Presley",
-      shipTo: "Tupelo, MS",
-      paymentMethod: "VISA ⠀•••• 3719",
-      amount: 312.44
-   });
-
-   await product.save();
+const saveProduct = async (product)=>{
+   return await Product.create(product);
 }
 
 module.exports={
