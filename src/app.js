@@ -12,4 +12,8 @@ app.use(express.urlencoded({ extended: true }));
 // v1 api routes
 app.use('/api/v1', routesv1);
 
+app.get('/', (req,res)=>{
+    res.send('Welcome to next-node, a Node Js bolilerplate.')
+});
+
 module.exports = app;
