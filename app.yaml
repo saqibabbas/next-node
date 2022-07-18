@@ -1,0 +1,6 @@
+runtime: nodejs10
+
+env_variables:
+  PORT: "${_PORT}"
+  MONGODB_URI: "${_MONGODB_URI}"
+  SECRET_KEY: "${_SECRET_KEY}"
