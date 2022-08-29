@@ -1,6 +1,8 @@
 const express = require('express');
 const productRoute =  require('./product.route');
 const authRoute =  require('./auth.route');
+const albumRoute =  require('./album.route');
+const purchaseRoute =  require('./purchase.route');
 
 const router = express.Router();
 
@@ -13,6 +15,14 @@ const defaultRoutes = [
     path: '/product',
     route: productRoute,
   },
+  {
+    path: '/albums',
+    route: albumRoute,
+  },
+  {
+    path: '/purchases',
+    route: purchaseRoute,
+  }
 ];
 
 defaultRoutes.forEach((route) => {
